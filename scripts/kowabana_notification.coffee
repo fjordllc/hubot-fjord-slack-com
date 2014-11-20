@@ -6,7 +6,7 @@ module.exports = (robot) ->
       wallpapers: "怖い画像",
       urban_legends: "都市伝説",
 
-    kowabana_host: 'http://kowabana.jp'
+    kowabana_host = 'http://kowabana.jp'
     post_name = post_type_map["#{post.type}"]
     "#{kowabana_host}/users/#{user.id}|#{user.name} さんが #{kowabana_host}/#{post.type}/#{post.id}|#{post_name} を投稿しました。"
 
