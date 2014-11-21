@@ -28,5 +28,12 @@
   "engines": {
     "node": ">= 0.8.x",
     "npm": ">= 1.1.x"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --compilers coffee:coffee-script/register test/*"
+  },
+  "devDependencies": {
+    "mocha": "~2.0.1",
+    "coffee-script": "~1.8.0"
   }
 }
