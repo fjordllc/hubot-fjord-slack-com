@@ -8,7 +8,10 @@ module.exports = (robot) ->
 
     kowabana_host = 'http://kowabana.jp'
     post_name = post_type_map["#{post.type}"]
-    "#{kowabana_host}/users/#{user.id}|#{user.name} さんが #{kowabana_host}/#{post.type}/#{post.id}|#{post_name} を投稿しました。"
+
+    "#{kowabana_host}/users/#{user.id}|#{user.name} さんが
+    #{kowabana_host}/#{post.type}/#{post.id}|#{post.title}(#{post_name})
+    を投稿しました。"
 
   robot.router.post "/hubot/new_posting_notification", (req, res) ->
     room = '#kowabana'
