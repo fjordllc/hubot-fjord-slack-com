@@ -1,10 +1,17 @@
 module.exports = (robot) ->
   say = (user, post) ->
     post_type_map =
-      stories: "怖い話",
-      comics: "怖い漫画",
-      wallpapers: "怖い画像",
-      urban_legends: "都市伝説",
+      stories:        "怖い話",
+      comics:         "ホラー漫画",
+      wallpapers:     "怖い画像",
+      urban_legends:  "都市伝説",
+      haunted_places: "心霊スポット",
+      umas:           "UMA投稿",
+      aliens:         "宇宙人・UFO事件",
+      demons:         "悪魔",
+      specters:       "妖怪",
+      ooparts:        "オーパーツ",
+      movies:         "ホラー映画",
 
     kowabana_host = 'http://kowabana.jp'
     post_name = post_type_map["#{post.type}"]
