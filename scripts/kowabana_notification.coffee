@@ -12,6 +12,7 @@ module.exports = (robot) ->
       specters:       "妖怪",
       ooparts:        "オーパーツ",
       movies:         "ホラー映画",
+      reviews:        "レビュー"
 
     kowabana_host = 'http://kowabana.jp'
     post_name = post_type_map["#{post.type}"]
